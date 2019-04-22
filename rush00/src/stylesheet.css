@@ -1,0 +1,24 @@
+body {
+	background-color: rgb(244, 241, 225);
+	font-family: "avenir";
+}
+
+.test {
+	background-color: brown;
+	color: azure;
+}
+
+h1 {
+	background-color: aqua;
+	color: yellow;
+}
+
+.product {
+	font-weight: bold;
+	font-size: 300%;
+	background-color: white;
+}
+
+hr {
+	border-color: transparent;
+}

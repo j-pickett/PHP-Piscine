@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ex00</title>
+  </head>
+  <body style="background-image: url(https://www.tvovermind.com/wp-content/uploads/2018/07/Ginyu-Force-750x422.jpg); height: 100vh; width:  100vw;">
+    <div id="balloon" style="margin: 100px; height: 200px; width:200px; background-color:#ba2129; border-radius: 50%;" onclick="onClick()" onmouseleave="mouseOver()"></div>
+    <script>
+      var color = 3;
+      function onClick(){
+        balloon.style.width = balloon.offsetWidth + 10 + "px";
+        balloon.style.height = balloon.offsetHeight + 10 + "px";
+        if (balloon.offsetHeight > 420){
+          balloon.style.width = "200px";
+          balloon.style.height = "200px";
+        }
+        color++;
+        if (color == 4)
+          color = 1;
+        if (color == 1)
+          balloon.style.backgroundColor = "#96b747";
+        else if (color == 2)
+          balloon.style.backgroundColor = "#576ca1";
+        else{
+          balloon.style.backgroundColor = "#ba2129";
+          color = 0;}
+        }
+        function mouseOver(){
+          balloon.style.width = balloon.offsetWidth - 5 + "px";
+          balloon.style.height = balloon.offsetHeight - 5 + "px";
+          if (balloon.offsetHeight < 200){
+            balloon.style.width = "200px";
+            balloon.style.height = "200px";
+          }
+          color--;
+          if (color == 1)
+            balloon.style.backgroundColor = "#96b747";
+          else if (color == 2)
+            balloon.style.backgroundColor = "#576ca1";
+          else {
+            balloon.style.backgroundColor = "#ba2129";
+            color = 3;}
+        }
+    </script>
+  </body>
+</html>
